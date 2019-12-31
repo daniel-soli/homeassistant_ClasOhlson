@@ -1,0 +1,11 @@
+{
+  "domain": "clas",
+  "name": "Clas Ohlson",
+  "documentation": "https://github.com/danielsolistensvik/homeassistant_ClasOhlson",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [
+    "@danielsolistensvik",
+    "@skrutt"
+  ]
+}
