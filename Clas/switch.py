@@ -215,7 +215,7 @@ class ClasSP4(SwitchDevice):
 
 class ClasSP2(_clas.device):
     def __init__(self, host, mac, devtype):
-        device.__init__(self, host, mac, devtype)
+        _clas.device.__init__(self, host, mac, devtype)
         self.type = "SP2"
 
     def set_power(self, state):
