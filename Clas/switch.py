@@ -213,7 +213,7 @@ class ClasSP4(SwitchDevice):
         except:
             _LOGGER.error("except in update")
 
-class ClasSP2(device):
+class ClasSP2(_clas.device):
     def __init__(self, host, mac, devtype):
         device.__init__(self, host, mac, devtype)
         self.type = "SP2"
