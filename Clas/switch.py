@@ -90,7 +90,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     
     elif switch_type in SP2_TYPES:
         clas_device = _clas.sp2((ip_addr, 80), mac_addr, None)
-        switches = [BroadlinkSP2Switch(friendly_name, clas_device, retry_times)]
+        switches = [ClasSP2(friendly_name, clas_device, retry_times)]
         
     clas_device.timeout = config.get(CONF_TIMEOUT)
     try:
@@ -101,7 +101,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     add_entities(switches)
 
 class ClasSP4(SwitchDevice):
-    """Representation of an Broadlink switch."""
+    """Representation of an Clas Ohlson switch."""
     def __init__(self, name, device, haskey = 0):
         """Initialize the switch."""
         self._haskey = haskey
